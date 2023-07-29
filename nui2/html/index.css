@@ -1,0 +1,365 @@
+body {
+  background: none !important;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#container {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  height: 70%;
+  width: 75%;
+  display: flex;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.org-name {
+  font-size: 28px;
+  color: black;
+  margin-top: 15%;
+  margin-left: 15%;
+  flex-wrap: wrap;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 30%;
+  margin-left: 15%;
+}
+
+.navigation li {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 5%;
+  padding: 15px;
+  width: 8rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 10%;
+}
+
+#change-tab {
+  white-space: nowrap;
+}
+
+.close-button-wrapper {
+  height: 100%;
+  margin: 15%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.close-button {
+  width: 50%;
+  padding: 15px;
+  background-color: #da4065;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.close-button span {
+  margin-left: 5%;
+}
+
+.close-button:hover {
+  cursor: pointer;
+  background-color: #ff698c;
+  transition: ease-in-out 200ms;
+}
+
+.tabs {
+  width: 100%;
+  height: 100%;
+}
+
+.tabs > div {
+  display: none;
+}
+.tabs > div.active {
+  display: block;
+}
+
+.members-count {
+  margin-left: 5%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  display: flex;
+}
+
+.counter-1 {
+  border-right: 1px solid black;
+  padding-right: 4rem;
+}
+
+.counter-2 {
+  padding-left: 4rem;
+}
+
+.counter-1,
+.counter-2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.members-count h1 {
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.search-section {
+  margin-left: 5%;
+  margin-bottom: 15%;
+  width: 100%;
+  display: flex;
+}
+
+.search-section input {
+  height: 3rem;
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.search-section input:focus {
+  outline: none;
+  transition: ease-in-out 100ms;
+}
+
+.search-section button {
+  margin-left: 10%;
+  width: 30%;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #4340da;
+}
+
+.search-section button:hover {
+  background-color: #706dff;
+  cursor: pointer;
+  transition: ease-in-out 100ms;
+}
+
+.members-section {
+  padding-left: 5%;
+  width: 100%;
+}
+
+.members-section li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  font-size: 14px;
+  color: #7d7d7d;
+  margin-top: 10%;
+}
+
+.member-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  white-space: nowrap;
+}
+
+.last-activity {
+  white-space: nowrap;
+}
+
+.header {
+  font-size: 36px;
+  color: black;
+  font-weight: 600;
+  margin-top: 3%;
+}
+
+.header p {
+  font-size: 24px;
+  padding-top: 3%;
+  text-align: center;
+}
+
+.starter1 {
+  background: url("https://wallpapers.com/images/high/1440p-grand-theft-auto-v-background-2560-x-1440-957m4sphitkpcm3s.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(70%);
+  width: 100%;
+  height: 35%;
+  margin-bottom: 5%;
+  background-color: black;
+  margin-top: 7%;
+}
+
+.starter2 {
+  background-image: url("https://wallpapers.com/images/high/gta-pictures-wtilo1r1axrhfo4g.webp");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 35%;
+  background-color: black;
+  filter: brightness(70%);
+}
+
+.starter-name {
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 2%;
+  opacity: 1;
+}
+
+.benefits-text {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.benefits-list {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.benefits-list li {
+  padding-bottom: 5%;
+  font-weight: 600;
+}
+
+.benefits {
+  margin-top: 5%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.starter-selection__wrapper {
+  width: 100%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
+}
+
+.starter1-select,
+.starter2-select {
+  background-color: #0832de;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.starter1-select:hover,
+.starter2-select:hover {
+  cursor: pointer;
+  background-color: #4340da;
+  transition: ease-in-out 100ms;
+}
+
+.upgrade-benefits {
+  width: 100%;
+  height: 60%;
+  border: 2px solid black;
+  margin-top: 10%;
+  border-radius: 10px;
+}
+
+.upgrade-benefits__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.upgrade-benefits__list h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10%;
+}
+
+.upgrade-benefit1,
+.upgrade-benefit2,
+.upgrade-benefit3,
+.upgrade-benefit4 {
+  padding-bottom: 5%;
+  font-size: 20px;
+}
+
+.price-info {
+  width: 100%;
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.price-info span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.buy-upgrade__section {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.buy-upgrade {
+  background-color: #0832de;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.buy-upgrade:hover {
+  cursor: pointer;
+  background-color: #4340da;
+  transition: ease-in-out 100ms;
+}

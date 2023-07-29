@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="reset.css" type="text/css" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b9ab1042e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="wrapper">
+        <nav class="navbar">
+          <p class="org-name" id="org">Nazwa organizacji</p>
+          <ul class="navigation">
+            <li href="#tab1">
+              <i class="fa-solid fa-house"></i>
+              <a id="change-tab" href="#tab1">Strona główna</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-sack-dollar"></i>
+              <a id="change-tab" href="#tab2">Starter Pack</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-arrow-up-short-wide"></i>
+              <a id="change-tab" href="#tab3">Upgrade</a>
+            </li>
+          </ul>
+          <div class="close-button-wrapper">
+            <button class="close-button" id="close">
+              <i class="fa-solid fa-power-off"></i>
+              <span>Wyjdź</span>
+            </button>
+          </div>
+        </nav>
+        <div class="tabs">
+          <div class="active" id="tab1">
+            <div class="members-count">
+              <div class="counter-1">
+                <h1>12</h1>
+                <p>Członkowie</p>
+              </div>
+              <div class="counter-2">
+                <h1>5</h1>
+                <p>Aktywni Członkowie</p>
+              </div>
+            </div>
+            <div class="search-section">
+              <div class="search-wrapper"></div>
+              <input placeholder="Wyszukaj obywatela" type="text" />
+              <button>Zaproś</button>
+            </div>
+            <div class="members-section">
+              <ul>
+                <p>Lista członków</p>
+                <li class="members-list">
+                  <i class="fa-solid fa-circle-user fa-2xl"></i>
+                  <p class="member-name" id="name">Andrew Bojangles</p>
+                  <span class="status" id="status">Aktywny</span>
+                  <span class="phone-number"> +79000010101 </span>
+                  <span class="role">Designer</span>
+                  <span class="last-activity" id="activity">2 days ago</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-user fa-2xl"></i>
+                  <p class="member-name" id="name">Andrew Bojangles</p>
+                  <span class="status" id="status">Aktywny</span>
+                  <span class="phone-number"> +79000010101 </span>
+                  <span class="role">Designer</span>
+                  <span class="last-activity" id="activity">2 days ago</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-user fa-2xl"></i>
+                  <p class="member-name" id="name">Andrew Bojangles</p>
+                  <span class="status" id="status">Aktywny</span>
+                  <span class="phone-number"> +79000010101 </span>
+                  <span class="role">Designer</span>
+                  <span class="last-activity" id="activity">2 days ago</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-user fa-2xl"></i>
+                  <p class="member-name" id="name">Andrew Bojangles</p>
+                  <span class="status" id="status">Aktywny</span>
+                  <span class="phone-number"> +79000010101 </span>
+                  <span class="role">Designer</span>
+                  <span class="last-activity" id="activity">2 days ago</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-user fa-2xl"></i>
+                  <p class="member-name" id="name">Andrew Bojangles</p>
+                  <span class="status" id="status">Aktywny</span>
+                  <span class="phone-number"> +79000010101 </span>
+                  <span class="role">Designer</span>
+                  <span class="last-activity" id="activity">2 days ago</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="tab2">
+            <div class="header-wrapper">
+              <div class="header">
+                <h1>Wybierz starter pack do odebrania.</h1>
+                <p>Możesz wybrać tylko jeden.</p>
+              </div>
+              <div class="starters-wrapper">
+                <div class="starter1">
+                  <h2 class="starter-name">Starter Pack 1</h2>
+                  <div class="benefits">
+                    <p class="benefits-text">Benefity</p>
+                    <ul class="benefits-list">
+                      <li>Mercedes AMG</li>
+                      <li>Bronie krótkie</li>
+                      <li>Bronie długie</li>
+                      <li>Skrzynki amunicyjne</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="starter2">
+                  <h2 class="starter-name">Starter Pack 2</h2>
+                  <div class="benefits">
+                    <p class="benefits-text">Benefity</p>
+                    <ul class="benefits-list">
+                      <li>Lamborghini Aventador</li>
+                      <li>Bronie krótkie</li>
+                      <li>Bronie długie</li>
+                      <li>Skrzynki nielegalne</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="starter-selection__wrapper">
+                  <button class="starter1-select">Wybierz pakiet 1</button>
+                  <button class="starter2-select">Wybierz pakiet 2</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab3">
+            <div class="header-wrapper">
+              <div class="header">
+                <h1>Wykup ulepszenie swojej organizacji</h1>
+                <p>Zapewni ci to wiele benefitów przedstawionych niżej:</p>
+              </div>
+            </div>
+            <div class="upgrade-benefits">
+              <ul class="upgrade-benefits__list">
+                <h2>Korzyści</h2>
+                <li class="upgrade-benefit1">Ulepszone szafki</li>
+                <li class="upgrade-benefit2">Tańsze bronie</li>
+                <li class="upgrade-benefit3">Limitowany dom</li>
+                <li class="upgrade-benefit4">Limitowany samochód do wyboru</li>
+              </ul>
+              <div class="price-info">
+                <span>Cena wynosi: 1 000 000 Exile Coins</span>
+              </div>
+            </div>
+            <div class="buy-upgrade__section">
+              <button class="buy-upgrade" id="buy-upgrade">
+                Zakup ulepszenie
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js" type="text/javascript"></script>
+  </body>
+</html>
